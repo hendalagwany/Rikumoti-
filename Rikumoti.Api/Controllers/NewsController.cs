@@ -86,7 +86,7 @@ public class NewsController : ControllerBase
 
     [HttpPost]
     public async Task<IActionResult> CreateNews([FromBody] News news)
-    {
+    { 
         news.Id =Guid.NewGuid().ToString();
         
         _context.News.Add(news);

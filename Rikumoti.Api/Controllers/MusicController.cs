@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Rikumoti.Api.Models;
+using Rikumoti.Api.Data;
 
 namespace Rikumoti.Api.Controllers;
-
-using Rikumoti.Api.Data;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -34,4 +34,12 @@ public class MusicController : ControllerBase
 
         return Ok(song);
     }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateSong(string id, [FromBody] Song updateSong)
+    {
+        var song = await _context.Song
+        .FirstOrDefaultAsync(s => s.Id == id);
+    }
 }
+
