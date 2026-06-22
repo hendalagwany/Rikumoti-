@@ -1,0 +1,84 @@
+:root {
+   /* =========================
+     COLORS
+  ========================= */
+   --bg-primary: #0B1020;
+   --bg-secondary: #171E35;
+
+   --text-primary: #ffffff;
+   --text-secondary: #cfcfcf;
+
+   --gold: #F6D9B3;
+   --gold-light: #FADDB3;
+   --gold-button: #F4D9AA;
+
+
+
+   /* =========================
+     MEMBER COLORS
+  ========================= */
+   --myuki: #E7C84E;
+   --ranmoki: #63D9FF;
+   --riku: #D96A79;
+   --toti: #B86DFF;
+
+   --myuki-sec: #7AB8FF;
+   --ranmoki-sec: #74E58B;
+   --riku-sec: #D9D9D9;
+   --toti-sec: #FF8DD8;
+
+   /* =========================
+     BORDER RADIUS
+  ========================= */
+   --radius-sm: 10px;
+   --radius-md: 16px;
+   --radius-lg: 20px;
+   --radius-xl: 999px;
+
+
+   /* =========================
+     SHADOWS
+  ========================= */
+   --shadow-sm:
+      1px 1px 6px rgba(0, 0, 0, .8);
+
+   --shadow-md:
+      2px 2px 8px rgba(0, 0, 0, .85);
+
+   --shadow-lg:
+      3px 3px 12px rgba(0, 0, 0, .9);
+
+   --shadow-glow:
+      0 0 25px rgba(0, 0, 0, .4);
+
+
+
+   /* =========================
+     TRANSITIONS
+  ========================= */
+   --transition:
+      all .3s ease;
+
+
+
+   /* =========================
+     CONTAINER
+  ========================= */
+   --container-width: 1200px;
+   --home-container-width :1350px;
+
+
+   /* =========================
+   TYPOGRAPHY
+========================= */
+   --font-main: "Libre Baskerville", serif;
+   --font-logo: "Allura", cursive;
+
+
+   /* =========================
+   BLUR
+========================= */
+   --blur-sm: blur(5px);
+   --blur-md: blur(8px);
+   --blur-lg: blur(14px);
+}

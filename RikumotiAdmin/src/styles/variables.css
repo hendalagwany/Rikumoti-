@@ -1,0 +1,19 @@
+:root {
+    --bg-main: #0f172a;
+    --bg-sidebar: #081224;
+    --bg-card: #1e293b;
+    --bg-card-hover: #273449;
+
+    --primary: #8b5cf6;
+    --primary-hover: #7c3aed;
+
+    --success: #22c55e;
+    --danger: #ef4444;
+
+    --text-main: #f8fafc;
+    --text-secondary: #94a3b8;
+
+    --border: rgba(255,255,255,0.08);
+
+    --radius: 18px;
+}

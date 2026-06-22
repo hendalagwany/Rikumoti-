@@ -1,0 +1,269 @@
+using Rikumoti.Api.Models;
+
+namespace Rikumoti.Api.Data;
+
+public static class VoiceActingData
+{
+    public static List<VoiceActingProject> VoiceActing = new()
+    {
+        new VoiceActingProject
+            {
+                Id = "1",
+                Member = "Myuki",
+                Character = "Airi",
+                Anime = "Dream Melody",
+                Image = "/images/voice/myuki-voice.png",
+                Description = "A gentle and caring girl who always supports her friends.",
+                Year = 2026,
+                Season = "Spring 2026",
+                Genre = ["Music", "Drama", "School"],
+                Episodes = 12,
+                RoleType = "Main Character",
+                Studio = "StarLight Animation",
+                CharacterAge = 17,
+                SampleQuote = "We'll always sing together no matter what happens!",
+                FanFavorite = true,
+                CharacterColor = "#F8BBD0",
+                Status = "Completed",
+                Audio = null
+            },
+
+            new VoiceActingProject
+            {
+                Id = "2",
+                Member = "Ranmoki",
+                Character = "Luna",
+                Anime = "Sky Fighters",
+                Image = "/images/voice/ranmoki-voice.png",
+                Description = "An energetic pilot with a fearless personality.",
+                Year = 2026,
+                Season = "Summer 2026",
+                Genre = ["Action", "Adventure", "Sci-Fi"],
+                Episodes = 24,
+                RoleType = "Main Character",
+                Studio = "Nova Wings Studio",
+                CharacterAge = 18,
+                SampleQuote = "The sky is mine to conquer!",
+                FanFavorite = true,
+                CharacterColor = "#64B5F6",
+                Status = "Completed"
+            },
+
+            new VoiceActingProject
+            {
+                Id = "3",
+                Member = "Riku",
+                Character = "Mina",
+                Anime = "Moonlight Diary",
+                Image = "/images/voice/riku-voice.png",
+                Description = "A calm student who expresses herself through music.",
+                Year = 2025,
+                Season = "Fall 2025",
+                Genre = ["Slice of Life", "Music", "Drama"],
+                Episodes = 13,
+                RoleType = "Main Character",
+                Studio = "Silver Note Animation",
+                CharacterAge = 16,
+                SampleQuote = "Every melody tells a story.",
+                FanFavorite = true,
+                CharacterColor = "#FFD54F",
+                Status = "Completed"
+            },
+
+            new VoiceActingProject
+            {
+                Id = "4",
+                Member = "Toti",
+                Character = "Yuki",
+                Anime = "Pixel Hearts",
+                Image = "/images/voice/toti-voice.png",
+                Description = "A cheerful programmer who loves solving mysteries.",
+                Year = 2026,
+                Season = "Winter 2026",
+                Genre = ["Mystery", "Comedy", "Technology"],
+                Episodes = 12,
+                RoleType = "Main Character",
+                Studio = "Digital Dream Studio",
+                CharacterAge = 17,
+                SampleQuote = "Every mystery has a hidden code.",
+                FanFavorite = true,
+                CharacterColor = "#BA68C8",
+                Status = "Completed"
+            },
+            new VoiceActingProject
+         {
+    Id = "5",
+    Member = "Myuki",
+    Character = "Hana",
+    Anime = "Crystal Garden",
+    Image = "/images/voice/myuki-voice2.png",
+    Description = "A shy florist who can communicate with magical creatures.",
+    Year = 2027,
+    Season = "Spring 2027",
+    Genre = ["Fantasy", "Adventure", "Romance"],
+    Episodes = 13,
+    Studio = "StarLight Animation",
+    RoleType = "Main Character",
+    CharacterAge = 16,
+    SampleQuote = "Even the smallest flower has a voice.",
+    FanFavorite = true,
+    CharacterColor = "#F8BBD0",
+    Status = "Completed",
+    Audio = null
+},
+
+new VoiceActingProject
+{
+    Id = "6",
+    Member = "Myuki",
+    Character = "Serena",
+    Anime = "Ocean Whispers",
+    Image = "/images/voice/myuki-voice3.png",
+    Description = "A mysterious girl who protects the secrets of the sea.",
+    Year = 2028,
+    Season = "Spring 2028",
+    Genre = ["Fantasy", "Drama"],
+    Episodes = 12,
+    Studio = "Azure Wave Studio",
+    RoleType = "Main Character",
+    CharacterAge = 17,
+    SampleQuote = "The ocean remembers everything we forget.",
+    FanFavorite = true,
+    CharacterColor = "#4FC3F7",
+    Status = "Upcoming",
+    Audio = null
+},
+
+new VoiceActingProject
+{
+    Id = "7",
+    Member = "Ranmoki",
+    Character = "Akira",
+    Anime = "Neon Rush",
+    Image = "/images/voice/ranmoki-voice2.png",
+    Description = "A talented racer who dreams of becoming the fastest in the city.",
+    Year = 2027,
+    Season = "Summer 2027",
+    Genre = ["Action", "Sci-Fi", "Racing"],
+    Episodes = 24,
+    Studio = "Nova Wings Studio",
+    RoleType = "Main Character",
+    CharacterAge = 18,
+    SampleQuote = "Speed is freedom!",
+    FanFavorite = true,
+    CharacterColor = "#64B5F6",
+    Status = "Completed",
+    Audio = null
+},
+
+new VoiceActingProject
+{
+    Id = "8",
+    Member = "Ranmoki",
+    Character = "Rin",
+    Anime = "Blazing Wings",
+    Image = "/images/voice/ranmoki-voice3.png",
+    Description = "A brave warrior who never backs down from a challenge.",
+    Year = 2027,
+    Season = "Spring 2027",
+    Genre = ["Fantasy", "Action", "Adventure"],
+    Episodes = 24,
+    Studio = "Nova Wings Studio",
+    RoleType = "Main Character",
+    CharacterAge = 19,
+    SampleQuote = "I will rise even from the ashes.",
+    FanFavorite = false,
+    CharacterColor = "#FF7043",
+    Status = "Completed",
+    Audio = null
+},
+
+new VoiceActingProject
+{
+    Id = "9",
+    Member = "Riku",
+    Character = "Elena",
+    Anime = "Starlight Symphony",
+    Image = "/images/voice/riku-voice2.png",
+    Description = "A violin prodigy searching for the melody of her dreams.",
+    Year = 2028,
+    Season = "Summer 2028",
+    Genre = ["Music", "Drama"],
+    Episodes = 13,
+    Studio = "Silver Note Studio",
+    RoleType = "Main Character",
+    CharacterAge = 17,
+    SampleQuote = "Every note carries a memory.",
+    FanFavorite = true,
+    CharacterColor = "#FFD54F",
+    Status = "Upcoming",
+    Audio = null
+},
+
+new VoiceActingProject
+{
+    Id = "10",
+    Member = "Riku",
+    Character = "Noa",
+    Anime = "Silent Seasons",
+    Image = "/images/voice/riku-voice3.png",
+    Description = "A thoughtful writer who captures emotions in her stories.",
+    Year = 2026,
+    Season = "Fall 2026",
+    Genre = ["Slice of Life", "Romance"],
+    Episodes = 12,
+    Studio = "Blue Horizon Studio",
+    RoleType = "Supporting Character",
+    CharacterAge = 18,
+    SampleQuote = "Some stories are written in silence.",
+    FanFavorite = false,
+    CharacterColor = "#B39DDB",
+    Status = "Completed",
+    Audio = null
+},
+
+new VoiceActingProject
+{
+    Id = "11",
+    Member = "Toti",
+    Character = "Mika",
+    Anime = "Cyber Quest",
+    Image = "/images/voice/toti-voice2.png",
+    Description = "A genius hacker who protects the virtual world from threats.",
+    Year = 2027,
+    Season = "Summer 2027",
+    Genre = ["Sci-Fi", "Mystery", "Action"],
+    Episodes = 13,
+    Studio = "Digital Core Studio",
+    RoleType = "Main Character",
+    CharacterAge = 17,
+    SampleQuote = "I can rewrite this world.",
+    FanFavorite = true,
+    CharacterColor = "#BA68C8",
+    Status = "Completed",
+    Audio = null
+},
+
+new VoiceActingProject
+{
+    Id = "12",
+    Member = "Toti",
+    Character = "Emi",
+    Anime = "Magic Academy",
+    Image = "/images/voice/toti-voice3.png",
+    Description = "An optimistic young mage who loves experimenting with spells.",
+    Year = 2027,
+    Season = "Winter 2027",
+    Genre = ["Fantasy", "Comedy", "School"],
+    Episodes = 12,
+    Studio = "StarLight Animation",
+    RoleType = "Supporting Character",
+    CharacterAge = 16,
+    SampleQuote = "Magic is just science with imagination!",
+    FanFavorite = false,
+    CharacterColor = "#81C784",
+    Status = "Completed",
+    Audio = null
+}
+    };
+}
