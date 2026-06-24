@@ -1,4 +1,4 @@
-namespace Rikumoti.Api.Models;
+    namespace Rikumoti.Api.Models;
 
 public class VoiceActingProject
 {

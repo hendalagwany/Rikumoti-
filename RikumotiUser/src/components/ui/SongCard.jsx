@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { FaPlay, FaPause } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const API = "http://localhost:5228";
 
@@ -37,7 +38,9 @@ function SongCard({ song }) {
                 </div>
             </div>
 
-            <h3>{song.title}</h3>
+            <Link to={`/music/${song.id}`} className="song-title">
+                <h3>{song.title}</h3>
+            </Link>
 
             <audio
                 ref={audioRef}

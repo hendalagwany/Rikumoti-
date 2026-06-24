@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { uploadImage } from "../services/uploadService";
+import { uploadAudio } from "../services/uploadService";
 
-export function useUploadImage(folder) {
+export function useUploadAudio(folder) {
     const [uploading, setUploading] = useState(false);
 
     const upload = async (file) => {
         setUploading(true);
 
         try {
-            return await uploadImage(folder, file);
+            return await uploadAudio(folder, file);
         } finally {
             setUploading(false);
         }

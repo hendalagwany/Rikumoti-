@@ -14,7 +14,7 @@ import VoiceActingDetails from "../pages/User Pages/VoiceActingDetails.jsx";
 import NewsDetails from "../pages/User Pages/NewsDetails.jsx";
 import AnimeDetails from "../pages/User Pages/AnimeDetails.jsx";
 import MerchDetails from "../pages/User Pages/MerchDetails.jsx";
-
+import SongDetails from "../pages/User Pages/SongDetails.jsx";
 
 function AppRoutes() {
     return (
@@ -24,6 +24,7 @@ function AppRoutes() {
             <Route path="/member/:id" element={<MemberDetails />} />
             <Route path="/voiceacting" element={<VoiceActing />} />
             <Route path="/music" element={<Music />} />
+            <Route path="/music/:id" element={<SongDetails />} />
             <Route path="/anime" element={<Anime />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/merch" element={<Merch />} />

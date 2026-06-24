@@ -43,7 +43,7 @@ function NewsManagement() {
         resetPage
     } = usePagination(filteredNews, 10);
 
-    const handleSeach = (e) => {
+    const handleSearch = (e) => {
         setSearch(e.target.value);
         resetPage();
     }
@@ -94,7 +94,7 @@ function NewsManagement() {
                 <SearchBar
                     placeholder="🔍 Search news..."
                     value={search}
-                    onChange={handleSeach}
+                    onChange={handleSearch}
                 />
 
                 <Link

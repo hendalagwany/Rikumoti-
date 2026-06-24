@@ -5,3 +5,6 @@ export function getImageUrl(path) {
 
     return `${API_URL}${path}`;
 }
+
+export const getAudioUrl = (path) =>
+    `http://localhost:5228${path}`;

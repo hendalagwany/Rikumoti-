@@ -35,14 +35,18 @@ function FormField({ field, value, onChange }) {
     return (
         <div className="floating-field">
             <input
-                placeholder=" "
+                placeholder={
+                    field.key === "duration"
+                        ? "mm:ss"
+                        : " "
+                }
                 name={field.key}
                 value={
                     field.type === "tags" && Array.isArray(value)
                         ? value.join(", ")
                         : value || ""
                 }
-                type="text"
+                type={field.key === "duration" ? "text" : "text"}
                 onChange={onChange}
             />
             <label>{field.key}</label>

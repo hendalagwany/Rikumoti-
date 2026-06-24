@@ -25,7 +25,6 @@ const fields = [
     { key: "role", label: "Role", type: "text" },
     { key: "author", label: "Author", type: "text" },
     { key: "tags", label: "Tags", type: "tags" },
-    { key: "featured", label: "Featured", type: "switch" }
 ];
 
 const emptyNews = {

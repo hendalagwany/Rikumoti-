@@ -2,6 +2,7 @@ import React from "react";
 import SongCard from "../../components/ui/SongCard";
 
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const API = "http://localhost:5228";
 
@@ -11,7 +12,10 @@ function Music() {
     useEffect(() => {
         fetch(`${API}/api/music`)
             .then(res => res.json())
-            .then(data => setSongs(data));
+            .then(data => {
+                console.log(data);
+                setSongs(data)
+            });
     }, []);
 
     const sections = [
@@ -36,7 +40,7 @@ function Music() {
                         <h2 className={section.className}>{section.title}</h2>
                         <div className="songs-grid">
                             {songs.filter(
-                                (song) => song.singer === section.singer
+                                (song) => song.singer?.toLowerCase() === section.singer?.toLowerCase()
                             ).map((song) => (
                                 <SongCard
                                     key={song.id}

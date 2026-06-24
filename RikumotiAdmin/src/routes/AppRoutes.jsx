@@ -36,18 +36,22 @@ function AppRoutes() {
                 <Route path="news" element={<NewsManagement />} />
                 <Route path="news/edit/:id" element={<EditNews />} />
                 <Route path="/admin/news/new" element={<EditNews />} />
-                
+
                 <Route path="music" element={<MusicManagement />} />
                 <Route path="music/edit/:id" element={<EditSong />} />
+                <Route path="/admin/music/new" element={<EditSong />} />
 
                 <Route path="anime" element={<AnimeManagement />} />
                 <Route path="anime/edit/:id" element={<EditAnime />} />
+                <Route path="/admin/anime/new" element={<EditAnime />} />
 
                 <Route path="voiceacting" element={<VoiceActingManagement />} />
                 <Route path="voiceacting/edit/:id" element={<EditVoiceActing />} />
+                <Route path="/admin/voiceacting/new" element={<EditVoiceActing />} />
 
                 <Route path="merch" element={<MerchManagement />} />
                 <Route path="merch/edit/:id" element={<EditMerch />} />
+                <Route path="/admin/merch/new" element={<EditMerch />} />
             </Route>
         </Routes>
     );

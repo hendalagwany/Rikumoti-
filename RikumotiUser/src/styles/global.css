@@ -44,6 +44,7 @@ section {
     padding-top: 130px;
 }
 
+
 /* ===================================
    NAVBAR
 =================================== */
@@ -593,6 +594,10 @@ section {
     margin-bottom: 80px;
 }
 
+.song-title{
+    text-decoration: none;
+}
+
 .music-section h2 {
     margin-bottom: 20px;
 }
@@ -637,6 +642,12 @@ section {
     width: 100%;
 }
 
+.song-cover img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
 .myuki-title {
     color: var(--myuki);
 }
@@ -666,7 +677,7 @@ section {
 
 .song-cover img {
     width: 100%;
-    height: 100%;
+    height: 500px;
     object-fit: cover;
     display: block;
     transition: .3s ease;

@@ -13,9 +13,9 @@ public class AppDbContext : DbContext
 
     public DbSet<Member> Members { get; set; }
     public DbSet<News> News { get; set; }
-    public DbSet<Song> Music { get; set; }
+    public DbSet<Songs> Songs { get; set; }
     public DbSet<AnimeProject> Anime { get; set; }
-    public DbSet<VoiceActingProject> VoiceActing { get; set; }
+    public DbSet<VoiceActingProject> VoiceActingProject { get; set; }
     public DbSet<MerchItem> Merch { get; set; }
 
 }

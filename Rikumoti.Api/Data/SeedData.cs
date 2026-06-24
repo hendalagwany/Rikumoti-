@@ -15,11 +15,11 @@ public static class SeedData
         if (!context.Anime.Any())
             context.Anime.AddRange(AnimeData.Anime);
 
-        if (!context.Music.Any())
-            context.Music.AddRange(MusicData.Songs);
+        if (!context.Songs.Any())
+            context.Songs.AddRange(MusicData.Songs);
 
-        if (!context.VoiceActing.Any())
-            context.VoiceActing.AddRange(VoiceActingData.VoiceActing);
+        if (!context.VoiceActingProject.Any())
+            context.VoiceActingProject.AddRange(VoiceActingData.VoiceActingProject);
 
         if (!context.Merch.Any())
             context.Merch.AddRange(MerchData.Merch);

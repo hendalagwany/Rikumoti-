@@ -4,7 +4,7 @@ namespace Rikumoti.Api.Data;
 
 public static class VoiceActingData
 {
-    public static List<VoiceActingProject> VoiceActing = new()
+    public static List<VoiceActingProject> VoiceActingProject = new()
     {
         new VoiceActingProject
             {
