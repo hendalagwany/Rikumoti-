@@ -40,7 +40,7 @@ public class VoiceActingController : ControllerBase
         string id,
          [FromBody] VoiceActingProject updateVoiceActing)
     {
-        var voiceActing= _context.VoiceActingProject
+        var voiceActing = _context.VoiceActingProject
         .FirstOrDefault(v => v.Id == id);
 
         if (voiceActing == null)
@@ -59,7 +59,7 @@ public class VoiceActingController : ControllerBase
         voiceActing.Episodes = updateVoiceActing.Episodes;
         voiceActing.RoleType = updateVoiceActing.RoleType;
         voiceActing.Studio = updateVoiceActing.Studio;
-        voiceActing.CharacterAge = updateVoiceActing.CharacterAge;   
+        voiceActing.CharacterAge = updateVoiceActing.CharacterAge;
         voiceActing.SampleQuote = updateVoiceActing.SampleQuote;
         voiceActing.FanFavorite = updateVoiceActing.FanFavorite;
         voiceActing.CharacterColor = updateVoiceActing.CharacterColor;
@@ -69,5 +69,37 @@ public class VoiceActingController : ControllerBase
         await _context.SaveChangesAsync();
 
         return Ok(voiceActing);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteVoiceActing(string id)
+    {
+        var voiceActing = await _context.VoiceActingProject.FindAsync(id);
+
+        if (voiceActing == null)
+        {
+            return NotFound();
+        }
+
+        _context.VoiceActingProject.Remove(voiceActing);
+        await _context.SaveChangesAsync();
+        return NoContent();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateVoiceActing(
+        [FromBody] VoiceActingProject VoiceActing
+        )
+    {
+        VoiceActing.Id = Guid.NewGuid().ToString();
+
+        _context.VoiceActingProject.Add(VoiceActing);
+        await _context.SaveChangesAsync();
+
+        return CreatedAtAction(
+            nameof(GetVoiceActing),
+            new { id = VoiceActing.Id },
+             VoiceActing
+             );
     }
 }

@@ -25,7 +25,6 @@ public static class VoiceActingData
                 FanFavorite = true,
                 CharacterColor = "#F8BBD0",
                 Status = "Completed",
-                Audio = null
             },
 
             new VoiceActingProject
@@ -109,7 +108,6 @@ public static class VoiceActingData
     FanFavorite = true,
     CharacterColor = "#F8BBD0",
     Status = "Completed",
-    Audio = null
 },
 
 new VoiceActingProject
@@ -131,7 +129,6 @@ new VoiceActingProject
     FanFavorite = true,
     CharacterColor = "#4FC3F7",
     Status = "Upcoming",
-    Audio = null
 },
 
 new VoiceActingProject
@@ -153,7 +150,6 @@ new VoiceActingProject
     FanFavorite = true,
     CharacterColor = "#64B5F6",
     Status = "Completed",
-    Audio = null
 },
 
 new VoiceActingProject
@@ -175,7 +171,6 @@ new VoiceActingProject
     FanFavorite = false,
     CharacterColor = "#FF7043",
     Status = "Completed",
-    Audio = null
 },
 
 new VoiceActingProject
@@ -197,7 +192,6 @@ new VoiceActingProject
     FanFavorite = true,
     CharacterColor = "#FFD54F",
     Status = "Upcoming",
-    Audio = null
 },
 
 new VoiceActingProject
@@ -219,7 +213,6 @@ new VoiceActingProject
     FanFavorite = false,
     CharacterColor = "#B39DDB",
     Status = "Completed",
-    Audio = null
 },
 
 new VoiceActingProject
@@ -241,7 +234,6 @@ new VoiceActingProject
     FanFavorite = true,
     CharacterColor = "#BA68C8",
     Status = "Completed",
-    Audio = null
 },
 
 new VoiceActingProject
@@ -263,7 +255,6 @@ new VoiceActingProject
     FanFavorite = false,
     CharacterColor = "#81C784",
     Status = "Completed",
-    Audio = null
 }
     };
 }

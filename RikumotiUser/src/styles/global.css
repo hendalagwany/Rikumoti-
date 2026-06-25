@@ -794,7 +794,19 @@ section {
     line-height: 1.6;
 }
 
+.color-preview {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.color-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
 
 /* ===================================
    FOOTER
