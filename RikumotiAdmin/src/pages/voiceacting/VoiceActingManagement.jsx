@@ -71,14 +71,14 @@ function VoiceActingManagement() {
             header={
                 <PageHeader
                     title="Voice Acting Management"
-                    descrtiption="Manage your voice acting projects here."
+                    description="Manage your voice acting projects here."
                 />
             }
         >
             <div className="table-toolbar">
 
                 <SearchBar
-                    placeholder="🔍 Search voice acting project..."
+                    placeholder="🔍 Search with character..."
                     value={search}
                     onChange={handleSearch}
                 />

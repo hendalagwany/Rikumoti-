@@ -65,14 +65,14 @@ function AnimeManagement() {
             header={
                 <PageHeader
                     title="Anime Management"
-                    descrtiption="Manage your anime projects here."
+                    description="Manage your anime projects here."
                 />
             }
         >
             <div className="table-toolbar">
 
                 <SearchBar
-                    placeholder="🔍 Search anime project..."
+                    placeholder="🔍 Search with anime title..."
                     value={search}
                     onChange={handleSearch}
                 />

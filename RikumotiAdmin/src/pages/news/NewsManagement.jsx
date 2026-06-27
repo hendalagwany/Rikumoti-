@@ -92,7 +92,7 @@ function NewsManagement() {
 
             <div className="table-toolbar">
                 <SearchBar
-                    placeholder="🔍 Search news..."
+                    placeholder="🔍 Search with news title..."
                     value={search}
                     onChange={handleSearch}
                 />

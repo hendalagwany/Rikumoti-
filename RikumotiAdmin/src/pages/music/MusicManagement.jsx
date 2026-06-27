@@ -82,7 +82,7 @@ if (!result.isConfirmed) return;
         >
             <div className="table-toolbar">
                 <SearchBar
-                    placeholder="🔍 Search song..."
+                    placeholder="🔍 Search with song title..."
                     value={search}
                     onChange={handleSearch}
                 />
