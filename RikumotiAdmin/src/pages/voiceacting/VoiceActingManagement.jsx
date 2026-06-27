@@ -55,8 +55,7 @@ function VoiceActingManagement() {
                 "Delete Voice Acting Project",
                 "Are you sure you want delete this voice acting project?"
             );
-        if (!result) return;
-
+        if (!result.isConfirmed) return;
         try {
             await deleteVoiceActingProject(id);
             showSuccess("Voice Acting Project deleted successfully");
@@ -79,7 +78,7 @@ function VoiceActingManagement() {
             <div className="table-toolbar">
 
                 <SearchBar
-                    placeholder="🔍 Search song..."
+                    placeholder="🔍 Search voice acting project..."
                     value={search}
                     onChange={handleSearch}
                 />
@@ -95,12 +94,11 @@ function VoiceActingManagement() {
                         { key: "character", label: "Character" },
                         { key: "anime", label: "Anime" },
                         {
-                            key: "description", 
-                            label: "Description", 
+                            key: "description",
+                            label: "Description",
                             render: (value) => truncateText(value, 50), className: "truncate-cell"
                         },
-                        { key: "year", label: "Year" },
-                        { key: "season", label: "Season" },
+
                     ]}
                     data={paginatedData}
                     currentPage={currentPage}

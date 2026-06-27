@@ -56,8 +56,7 @@ function MusicManagement() {
                 "Are you sure you want delete this song?"
             );
 
-        if (!result) return;
-
+if (!result.isConfirmed) return;
         try {
             await deleteSong(id);
             await showSuccess(

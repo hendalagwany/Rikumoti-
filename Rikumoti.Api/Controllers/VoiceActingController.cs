@@ -35,7 +35,7 @@ public class VoiceActingController : ControllerBase
         return Ok(voiceActingProject);
     }
 
-    [HttpPut("{id}")]
+    [HttpPut("{id}")] 
     public async Task<IActionResult> UpdatedVoiceActing(
         string id,
          [FromBody] VoiceActingProject updateVoiceActing)

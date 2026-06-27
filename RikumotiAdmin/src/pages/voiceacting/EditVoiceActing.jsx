@@ -22,11 +22,8 @@ const fields = [
     { key: "description", label: "Description", type: "textarea" },
     { key: "year", label: "Year", type: "number" },
     { key: "season", label: "Season", type: "text" },
-
     { key: "genre", label: "Genre", type: "text" },
-
     { key: "episodes", label: "Episodes", type: "number" },
-
     { key: "roleType", label: "Role Type", type: "text" },
     { key: "studio", label: "Studio", type: "text" },
     { key: "characterAge", label: "Character Age", type: "number" },
@@ -43,18 +40,13 @@ const emptyVoiceActing = {
     description: "",
     year: "",
     season: "",
-
     genre: [],
-
     episodes: "",
-
     roleType: "",
     studio: "",
     characterAge: "",
     sampleQuote: "",
-
     fanFavorite: false,
-
     characterColor: "",
     status: "",
 };
@@ -80,8 +72,6 @@ function EditVoiceActing() {
         }));
         showSuccess("Image uploaded.");
     }
-
-
 
     const {
         data: voiceActing,

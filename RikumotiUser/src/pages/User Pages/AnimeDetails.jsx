@@ -19,6 +19,7 @@ function AnimeDetails() {
         <div className="anime-details">
             <div className="anime-info">
                 <h1>{animeProject.title} </h1>
+                <br />
                 <p><strong>Role:</strong> {animeProject.role} </p>
                 <br />
                 <p><strong>Year:</strong>{animeProject.year} </p>
